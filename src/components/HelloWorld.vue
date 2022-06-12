@@ -1,13 +1,17 @@
-<script setup lang="ts">
+<script setup lang="tsx">
+
 import { ref } from 'vue'
+import Foo from './Foo'
 
 defineProps<{ msg: string }>()
-
 const count = ref(0)
+const abc = <div>abc</div>
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
+  <Foo msg="Foo的msg" />
+  <abc />
 
   <p>
     Recommended IDE setup:
