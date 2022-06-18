@@ -9,6 +9,7 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "types": ["vite/client"],
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,

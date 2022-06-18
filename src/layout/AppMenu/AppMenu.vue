@@ -1,6 +1,7 @@
 <template>
   <el-menu
     :unique-opened="true"
+    :collapse="$store.state.isCollapse"
     active-text-color="#ffd04b"
     background-color="#304156"
     class="el-menu-vertical-demo"
@@ -100,5 +101,9 @@ import { HomeFilled, GoodsFilled, Grid, Goods, Comment, ScaleToOriginal, Present
 .el-menu {
   height: 100vh;
   border-right: none;
+}
+.el-menu:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
 }
 </style>

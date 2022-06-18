@@ -6,12 +6,15 @@
 
 <script lang="ts" setup>
 import { store } from '@/store'
-import { getLoginInfo } from '@/api/user'
+import { getLoginInfo, logout } from '@/api/user'
 import { onMounted, ref } from 'vue'
 import type { ILoginInfo } from '@/api/types/common'
 
 const list = ref<ILoginInfo['slide']>([])
 
+logout()
+logout()
+logout()
 onMounted(() => {
   getLoginInfo().then(data => {
     console.log(data.logo_rectangle)
