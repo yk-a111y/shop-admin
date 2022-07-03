@@ -238,10 +238,4 @@ const handleSuccess = () => {
 .box-card {
   margin-bottom: 20px;
 }
-
-::v-deep(.el-table_1_column_5 .cell) {
-  float: left;
-  padding: 0;
-  text-align: center;
-}
 </style>
